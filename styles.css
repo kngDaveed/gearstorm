@@ -112,25 +112,13 @@ div.menu-box{
 .landing-page{
   color: white;
   background:linear-gradient(rgba(0,0,0,0.05), #202020), url(images/loft-gym.jpg); 
-  /* background-image: url(images/loft-gym.jpg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* .home-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 
 .base-content{
-  /* position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 80%;
-  max-width: 1300px;
-  width: 95%; */
   background-color: #ffffff7a;
   padding: 1rem ;
   display: flex;
@@ -181,6 +169,62 @@ div.menu-box{
   justify-content: end;
   position: relative;
 }
+.content-ad04{
+  background-image: linear-gradient(#2125291a, #202020),url(images/rig-dumbell.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  /* display: none; */
+}
+.content-ad05{
+  background-image: linear-gradient(#2125291a, #202020),url(images/gym-benchset.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  /* display: none; */
+}
+.content-ad06{
+  background-image: linear-gradient(#2125291a, #202020),url(images/gym-rack3d.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  /* display: none; */
+}
+.content-ad07{
+  background-image: linear-gradient(#2125291a, #202020),url(images/dumbell-mockup.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  /* display: none; */
+}
 
 .content-link{
   background: #ffffff7a;
@@ -222,7 +266,6 @@ div.menu-box{
 }
 .impression{
   height: 400px;
-  /* height: 100%; */
   position: relative;
 }
 .impression h1{
@@ -387,7 +430,49 @@ flex-basis: 24%;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
+  .sub2{
+    padding: 3rem 1rem 2rem;
+  }
+  .brack{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .content-ad04{
+    display: flex;
+  }
+  .base-content{
+    border-radius: .1rem;
+  }
+  .impression h1{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.8;
+  }
+  .impression h1:nth-child(2){
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    }
+    .impression h1:nth-child(3){
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    }
+    .content-right{
+      top: 10%;
+      right: 0%;
+    }
+    .content-left{
+      bottom: 10%;
+      left: 45%;
+    }
+    
+  .base-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .dsp-items {
     flex-basis: 100%;
   }
@@ -408,6 +493,7 @@ flex-basis: 24%;
     width: 95%;
   }
   .header{
+    top: 26px;
     padding: 0rem;
     padding-left: 1rem;
     align-items: center;
@@ -480,6 +566,66 @@ div.menu-box{
 
 
 @media (max-width: 600px) {
+  .brack{
+    display: flex;
+  }
+  .link-block {
+    padding: 0;
+  }
+  .content-ad01,.content-ad02,.content-ad03{
+    display: none;
+  }
+  .content-ad04,.content-ad05,.content-ad06,.content-ad07{
+font-size: 12px;
+  }
+  .sub2{
+    padding: 4rem 10px 20px;
+  }
+  .impression h1{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 0.1;
+    margin:0;
+  }
+  .impression h1:nth-child(1){
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    }
+  .impression h1:nth-child(2){
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    }
+    .impression h1:nth-child(3){
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    }
+    .content-right{
+      width: 300px;
+      top: 50%;
+      right: 5%;
+    }
+    .impression{
+      height: 500px;
+    }
+    .impression h5{
+      font-size: 14px;
+    }
+    .impression p{
+      font-size: 12px;
+    }
+    .content-left{
+      width: 300px;
+      bottom: 10%;
+      left: 2%;
+    }
+    
+  .base-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
   .dsp-items {
     flex-basis: 100%;
   }
