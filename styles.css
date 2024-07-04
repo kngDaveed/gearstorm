@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -9,71 +10,259 @@
   font-family: "Poppins", sans-serif;
   outline: none;
   scroll-behavior: smooth;
-  color: white;
 }
+section {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.sub2{
+  padding: 5rem 3rem 3rem;
+  }
+
+
+/* navbar header */
 .header{
   position: fixed;
-  top: 0;
-  left: 0;
+  max-width: 1500px;
   width: 100%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  top: 36px;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
  z-index: 99;
- padding: 1rem 2rem;
+ padding: 1rem 1.5rem;
 background: #212529;
 box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
-
-.logo a{
-    font-size: 18px;
+.logo-nav{
+  display: flex;
+  align-items:center;
+  letter-spacing: -1px;
+}
+.logo-nav a{
+  align-items: center;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #fff;
+}
+.fa-dumbbell{
+  transform: rotate(45deg);
+}
+.nv-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #nv-items a{
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-   padding: 1rem;
+   padding: 10px 1rem;
     align-items:center;
 }
-
+.socialx{
+    padding: 8px 1.5rem;
+    background: linear-gradient(to right, #364555, #494949);
+    /* background: linear-gradient(to right, #364555, #6f3985); */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 10px;
+}
+.socialx span {
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.socialx i {
+  font-size: 14px;
+  /* color: #6f3985; */
+  color: #364555;
+}
+#nv-items a:active {
+    color:#ba481b;
+}
 #nv-items a:hover {
     color:#ba481b;
 }
 
 #menu-icon{
-    font-size: 2.2rem;
+  width: 14px;
+  aspect-ratio: 1;
+    font-size: 1.3rem;
     color: #fff;
     display: none;
 }
+div.menu-box{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
 
-section {
-  min-height: 100vh;
-}
-h1 {
-  font-size: 56px;
-}
-h2 {
-  font-size: 48px;
-}
-h3 {
-  font-size: 28px;
-}
-h4 {
-  font-size: 24px;
-}
-h5 {
-  font-size: 20px;
-}
-h6 {
-  font-size: 16px;
-}
-p {
-  font-size: 14px;
-}
-.hero-sectio {
-  background: linear-gradient(rgba(0, 0, 0, 0.05), #47a197), url(images/gym.jpg);
-  /* background: url(images/gym.jpg); */
+/* landing page */
+.landing-page{
+  color: white;
+  background:linear-gradient(rgba(0,0,0,0.05), #202020), url(images/loft-gym.jpg); 
+  /* background-image: url(images/loft-gym.jpg); */
   background-size: cover;
-  /* object-fit: cover; */
   background-position: center;
+  background-repeat: no-repeat;
 }
+
+/* .home-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.base-content{
+  /* position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 80%;
+  max-width: 1300px;
+  width: 95%; */
+  background-color: #ffffff7a;
+  padding: 1rem ;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.link-block {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  max-width: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+.link-block span {
+  width:30px;
+  aspect-ratio: 1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: all ease .3s;
+}
+.link-block i {
+  font-size: 14px;
+  /* color: #6f3985; */
+  color: #364555;
+}
+.link-block span:hover{
+  transform: translate(0px, -5px);
+  background: rgba(0, 0, 0, 0.493);
+}
+.link-block span:hover i{
+  color: #fff;
+}
+.content-ad01{
+  background-image: linear-gradient(#2125291a, #202020),url(images/kettlebell.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+.content-link{
+  background: #ffffff7a;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  aspect-ratio: 1;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.content-ad02{
+  background-image: linear-gradient(#21252908, #202020),url(images/dumbell-mockup.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+.content-ad03{
+  background-image: linear-gradient(#21252908, #202020),url(images/gym-benchset.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+.impression{
+  height: 400px;
+  /* height: 100%; */
+  position: relative;
+}
+.impression h1{
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1.8;
+}
+.impression h1:nth-child(2){
+position: absolute;
+top: 40%;
+left: 40%;
+}
+.impression h1:nth-child(3){
+position: absolute;
+left: 80%;
+bottom: -5%;
+}
+
+.content-right{
+  width: 400px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.content-left{
+  width: 400px;
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+}
+
+
+
+.arrange{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color:#000;
+}
+
 .pex{
   border: 3px solid ;
 }
@@ -110,7 +299,7 @@ nav.navbar{
 .web{
   display: block;
 }
-.mobil{
+.mobile{
   display: none;
 }
 .home-text h4 {
@@ -122,8 +311,7 @@ nav.navbar{
   text-align: center;
   padding-top: 4rem;
 }
-.about-section h2,
-span {
+.about-section h2 {
   font-family: "Kaushan Script", cursive;
 }
 .dsp-itemx1 img {
@@ -188,6 +376,17 @@ flex-basis: 24%;
   transform: translateY(-10px);
 }
 
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   .dsp-items {
     flex-basis: 100%;
@@ -208,40 +407,78 @@ flex-basis: 24%;
     padding: 2rem 0 0; 
     width: 95%;
   }
+  .header{
+    padding: 0rem;
+    padding-left: 1rem;
+    align-items: center;
+  }
+
   .nv-item {
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3% !important;
-    background: #212529;
+    top: 60px;
+    right: -100rem;
+    width: 55%;
+    height: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    background: #6c757d;
     color: #0f885b;
     border-top: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .8rem 0 1rem 0;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    display: none;
+    transition: all ease 0.5s;
+}
+.nv-item.active{
+  right: .5rem;
+}
+.socialx{
+  margin: 10px 0 0;
+  padding: 8px 10px;
+  width: 100%;
+}
+div.menu-box{
+  display: block;
+  padding: 1rem 1.4rem 1rem 1.2rem;
+  background:#6c757d;
+  ;
+  border-radius: 0 0 0 .6rem;
 }
 .web{
   display: none;
 }
-.mobil{
+.mobile{
   display: block;
 }
-
 #menu-icon{
   display: block;
 }
 
-.nv-item.active{
-    display: block;
-    height: 50vh;
-    text-align: start !important; 
-}
+
   .nv-item a{
     display: block !important;
-    margin: 1rem 0;
+  }
 }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
   .dsp-items {
     flex-basis: 100%;
@@ -265,16 +502,14 @@ flex-basis: 24%;
     padding-top: 4rem;
   }
 
-  .services-section h2,
-  span {
+  .services-section h2 {
     font-family: "Kaushan Script", cursive;
   }
 .programs-section {
     text-align: center;
     padding-top: 4rem;
   }
-  .programs-section h2,
-  span {
+  .programs-section h2 {
     font-family: "Kaushan Script", cursive;
   }
 
@@ -282,8 +517,7 @@ flex-basis: 24%;
     text-align: center;
     padding-top: 4rem;
   }
-  .contact-section h2,
-  span {
+  .contact-section h2 {
     font-family: "Kaushan Script", cursive;
   }
 .all a{
